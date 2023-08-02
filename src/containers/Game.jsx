@@ -8,12 +8,12 @@ const Game = () => {
 
     const toggleInterruptor = () => {
         setInterruptor(!interruptor);
-        setChecked(interruptor ? 1 : 0);
+        setChecked(interruptor ? 0 : 1);
     };
 
   return (
-    <div className='d-flex flex-column'>
-      <h1 className='text-center mb-5 pb-5 text-white'>Piedra, Papel o Tigeras</h1>
+    <div className=''>
+      <h1 className='text-center text-white'>Piedra, Papel o Tigeras</h1>
 
       <form>
         <input type="radio" id="rock-rock" name="rock-paper-scissors"/>

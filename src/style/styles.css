@@ -57,8 +57,12 @@ form {
 }
 
 h1 {
-  margin-top: 10px;
-  text-align: center;
+  font-size: 60px;
+  position: absolute;
+  top: 70px;
+  bottom: 0;
+  right: 0;
+  left: 0;
 }
 
 #hands {
@@ -195,16 +199,13 @@ input[id^="paper"]:checked~div #computer-hand .finger-4 {
 #rock-paper:checked~div h2::before,
 #paper-scissors:checked~div h2::before,
 #scissors-rock:checked~div h2::before {
-  content: "Ganaste"
-    /* content: "Ganaste COB 🥰" */
+  content: "Ganaste COB 🥰"
 }
 
 #rock-scissors:checked~div h2::before,
 #paper-rock:checked~div h2::before,
 #scissors-paper:checked~div h2::before {
-  /* content: "Lo siento COB has perdido 🫣" */
-  content: "Lo siento has perdido 🫣"
-
+  content: "Lo siento COB has perdido 🫣"
 }
 
 #message {
@@ -229,7 +230,7 @@ input:checked~#message {
 }
 
 #icons {
-  width: 60px;
+  width: 75px;
   height: 100%;
   display: inline-flex;
   align-items: center;
@@ -240,9 +241,8 @@ input:checked~#message {
 #icons>div {
   align-items: center;
   justify-content: center;
-  width: 60px;
+  width: 75px;
   height: 60px;
-  overflow: hidden;
   position: relative;
 }
 
@@ -293,10 +293,11 @@ label:nth-of-type(3) {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  width: 100vw;
-  margin-top: 20px;
+  position: absolute;
+  top: 90%;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 footer h6 {
@@ -306,6 +307,10 @@ footer h6 {
 }
 
 @media (max-width: 767px) {
+  h1 {
+    font-size: 50px;
+    top: 100px;
+  }
   #hands {
     flex-direction: column;
   }
